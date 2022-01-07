@@ -1,9 +1,9 @@
-List<double>? twoSum({required List<double> array, required double target}) {
+List<int>? twoSum({required List<double> array, required double target}) {
   if (array.length < 2) return null;
-  for (int i = 0; i < array.length - 1; i ++) {
-    for (int j = 0; j < array.length; j ++) {
+  for (int i = 0; i < array.length - 1; i++) {
+    for (int j = 0; j < array.length; j++) {
       if (array[i] + array[j] == target) {
-        return [array[i], array[j]];
+        return [i, j];
       }
     }
   }
