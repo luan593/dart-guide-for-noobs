@@ -16,6 +16,14 @@ class BankAccount {
   String toString() {
     return '${this.institucion} | ${this.balance}';
   }
+
+  double get getBalance {
+    return this.balance;
+  }
+
+  set setBalance(double newBalance) {
+    this.balance = newBalance;
+  }
   
   void deposit({required double amount}) {
     this.balance += amount;
