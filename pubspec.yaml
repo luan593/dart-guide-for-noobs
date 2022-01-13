@@ -1,5 +1,9 @@
 name: learning
+
 environment:
   sdk: '>=2.14.0 <3.0.0'
+  
 dependencies:
   test: ^1.18.0
+  pedantic: ^1.11.0
+  http: ^0.13.4

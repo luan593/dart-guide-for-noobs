@@ -13,14 +13,14 @@ List<int>? twoSum({required List<double> array, required double target}) {
 List<int>? twoSumOP({required List<double> array, required double target}) {
   if (array.length < 2) return null;
   final Map<double, int> container = Map();
-  for (int i = 0; i < array.length; i ++) {
-    final double number = array[i];
+  for (int j = 0; j < array.length; j ++) {
+    final double number = array[j];
     if (container.containsKey(number)) {
-      final int j = container[number] as int;
-      return [j, i];
-      }
+      final int i = container[number] as int;
+      return [i, j];
+    }
     final double difference = target - number;
-    container[difference] = i;
+    container[difference] = j;
   }
   return null;
 }
