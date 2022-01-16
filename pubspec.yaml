@@ -1,4 +1,5 @@
 name: learning
+description: here starts the journey of a successful dart developer
 
 environment:
   sdk: '>=2.14.0 <3.0.0'

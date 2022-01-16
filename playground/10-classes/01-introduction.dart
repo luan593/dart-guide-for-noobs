@@ -9,7 +9,7 @@ class BankAccount {
 
   BankAccount({
     required this.institucion, 
-    required this.balance
+    this.balance : 0
     });
 
   @override
